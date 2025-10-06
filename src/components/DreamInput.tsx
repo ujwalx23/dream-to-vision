@@ -19,20 +19,20 @@ export const DreamInput = ({ onSubmit, isLoading }: DreamInputProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-2xl mx-auto space-y-4">
+    <form onSubmit={handleSubmit} className="w-full max-w-2xl mx-auto space-y-4 px-4">
       <div className="relative">
         <Textarea
           value={dream}
           onChange={(e) => setDream(e.target.value)}
           placeholder="Describe your dream... (e.g., 'I want to move to Japan in 2 years' or 'Start a successful bakery business')"
-          className="min-h-32 text-lg resize-none bg-card border-border focus:border-primary transition-all"
+          className="min-h-32 text-base sm:text-lg resize-none bg-card border-border focus:border-primary transition-all"
           disabled={isLoading}
         />
       </div>
       <Button
         type="submit"
         disabled={!dream.trim() || isLoading}
-        className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all"
+        className="w-full h-14 text-base sm:text-lg font-semibold bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all"
       >
         {isLoading ? (
           <>

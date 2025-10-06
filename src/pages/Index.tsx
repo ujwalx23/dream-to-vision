@@ -82,41 +82,17 @@ const Index = () => {
         <div className="relative z-10 w-full max-w-7xl mx-auto">
           {!roadmap ? (
             <div className="space-y-8 text-center animate-in fade-in slide-in-from-bottom-4 duration-700">
-              <div className="space-y-4">
-                <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+              <div className="space-y-4 px-4">
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                   Dream to Reality
                 </h1>
-                <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+                <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto px-4">
                   Transform your dreams and life goals into visual, actionable roadmaps powered by AI
                 </p>
               </div>
               
               <div className="pt-8">
                 <DreamInput onSubmit={handleDreamSubmit} isLoading={isLoading} />
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto pt-12">
-                <div className="p-6 rounded-lg bg-card/50 backdrop-blur border border-border">
-                  <div className="text-3xl mb-3">🎯</div>
-                  <h3 className="font-semibold mb-2 text-primary">Define Your Dream</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Share any life goal or aspiration
-                  </p>
-                </div>
-                <div className="p-6 rounded-lg bg-card/50 backdrop-blur border border-border">
-                  <div className="text-3xl mb-3">✨</div>
-                  <h3 className="font-semibold mb-2 text-secondary">AI Magic</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Watch AI break it into milestones
-                  </p>
-                </div>
-                <div className="p-6 rounded-lg bg-card/50 backdrop-blur border border-border">
-                  <div className="text-3xl mb-3">🚀</div>
-                  <h3 className="font-semibold mb-2 text-accent">Take Action</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Follow your personalized roadmap
-                  </p>
-                </div>
               </div>
             </div>
           ) : (
