@@ -96,14 +96,7 @@ export const RoadmapView = ({ roadmap, onBack }: RoadmapViewProps) => {
 
   return (
     <div className="w-full max-w-6xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700 px-4">
-      <Button
-        onClick={onBack}
-        variant="outline"
-        className="mb-4"
-      >
-        <ArrowLeft className="mr-2 h-4 w-4" />
-        New Dream
-      </Button>
+     
 
       <div className="text-center space-y-4 mb-12">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent px-4">
